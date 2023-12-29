@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Header > matches the snapshot taken 1`] = `
+<div>
+  <header>
+    <h1>
+      SwiftCart Provisions Express
+    </h1>
+    <nav>
+      <a
+        href="./Home"
+      >
+        Home
+      </a>
+      <a
+        href="./Shop"
+      >
+        Shop
+      </a>
+      <a
+        href="#"
+      >
+        Shopping Cart
+      </a>
+    </nav>
+  </header>
+</div>
+`;
