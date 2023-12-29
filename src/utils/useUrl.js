@@ -10,7 +10,7 @@ export default function useUrl(url) {
         setJson(json);
       })
       .catch((error) => setError(error))
-      .finally(setLoading(false));
+      .finally(() => setLoading(false));
   }, [url]);
 
   return { json, loading, error };
