@@ -8,12 +8,12 @@ exports[`Header > matches the snapshot taken 1`] = `
     </h1>
     <nav>
       <a
-        href="./Home"
+        href="/Home"
       >
         Home
       </a>
       <a
-        href="./Shop"
+        href="/Shop"
       >
         Shop
       </a>
