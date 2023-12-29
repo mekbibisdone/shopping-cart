@@ -8,19 +8,14 @@ exports[`Header > matches the snapshot taken 1`] = `
     </h1>
     <nav>
       <a
-        href="/Home"
+        href="/"
       >
         Home
       </a>
       <a
-        href="/Shop"
+        href="/shop"
       >
         Shop
-      </a>
-      <a
-        href="#"
-      >
-        Shopping Cart
       </a>
     </nav>
   </header>
