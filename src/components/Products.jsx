@@ -1,23 +1,13 @@
 import Product from "./Product";
 import useUrl from "../utils/useUrl";
-import Header from "./Header";
-import Footer from "./Footer";
-import { useState } from "react";
-
+import PropTypes from "prop-types";
 const url = "https://fakestoreapi.com/products";
 
-export default function Shop() {
+export default function Products({ handleAdding }) {
   const { json: products, loading, error } = useUrl(url);
-  const [amount, setAmount] = useState(0);
-  function handleAdding(newAmount) {
-    setAmount(amount + newAmount);
-  }
   if (error) return <h1>Sorry couldn&apos;t load products</h1>;
   return (
-    <>
-    <Header shop={true} amount={amount}></Header>
     <main>
-      
       {loading ? (
         <h1>Loading</h1>
       ) : (
@@ -35,8 +25,9 @@ export default function Shop() {
         ))
       )}
     </main>
-    <Footer></Footer>
-    </>
-    
   );
 }
+
+Products.propTypes = {
+  handleAdding: PropTypes.func,
+};
