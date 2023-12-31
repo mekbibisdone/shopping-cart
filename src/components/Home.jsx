@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main style={{ alignSelf: "center", maxWidth: "800px" }}>
+    <main style={{ alignSelf: "center", maxWidth: "800px", background:"#cfcf9f", padding:"50px" }}>
       <h2>Welcome to SwiftCart Provisions Express!</h2>
       <p>
         Discover a world of convenience at your fingertips with SwiftCart, your

@@ -1,31 +1,52 @@
-
-@import url('https://fonts.googleapis.com/css?family=Spline%20Sans:700|Spline%20Sans:400');
-
-body {
-  font-family: 'Spline Sans';
-  font-weight: 400;
-  font-size: 1.25rem;
-}
+@import url("https://fonts.googleapis.com/css?family=Spline%20Sans:700|Spline%20Sans:400");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --text: #0d0d0d;
+  --background: #fcfcfb;
+  --primary: #9d9e64;
+  --secondary: #cfcf9f;
+  --accent: #33331f;
+}
+body {
+  font-family: "Spline Sans";
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--text);
+  background: var(--background);
+}
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Spline Sans';
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Spline Sans";
   font-weight: 700;
 }
 
-html {font-size: 100%;} /* 16px */
+html {
+  font-size: 100%;
+} /* 16px */
 
-h1 {font-size: 2.369rem; /* 37.92px */}
+h1 {
+  font-size: 2.369rem; /* 37.92px */
+}
 
-h2 {font-size: 1.777rem; /* 28.48px */}
+h2 {
+  font-size: 1.777rem; /* 28.48px */
+}
 
-h3 {font-size: 1.333rem; /* 21.28px */}
+h3 {
+  font-size: 1.333rem; /* 21.28px */
+}
 
-small {font-size: 0.750rem; /* 12px */}
+small {
+  font-size: 0.75rem; /* 12px */
+}
 
 button {
   font-size: 1.25rem;
@@ -36,15 +57,21 @@ button {
   flex-direction: column;
   gap: 50px;
 }
-header{
+a {
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+header {
   display: flex;
   padding: 20px;
   justify-content: space-around;
   align-items: center;
   flex: 0;
   flex-wrap: wrap;
+  background: var(--primary);
+  width: 100vw;
 }
-nav{
+nav {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -52,7 +79,7 @@ nav{
 main {
   flex: 1;
 }
-main img{
+main img {
   max-width: 200px;
   max-height: 200px;
   object-fit: contain;
@@ -60,7 +87,7 @@ main img{
 main input {
   padding: 10px;
 }
-.addButton{
+.addButton {
   height: 75px;
   border-radius: 10px;
   padding: 20px;
@@ -69,23 +96,24 @@ main input {
   padding: 20px 40px;
   border-radius: 10px;
 }
+.product {
+  background: var(--secondary);
+  padding: 10px;
+  border-radius: 10px;
+}
 footer {
   width: 100vw;
   display: flex;
   justify-content: center;
   flex: 0;
+  background: var(--primary);
 }
 
-footer nav{
+footer nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 address {
   text-align: center;
-}
-@media (max-width:600px) {
-  .product {
-    overflow-x: scroll; 
-  }
 }

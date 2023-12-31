@@ -31,7 +31,7 @@ exports[`Header > matches the snapshot taken 1`] = `
     </nav>
   </header>
   <main
-    style="align-self: center; max-width: 800px;"
+    style="align-self: center; max-width: 800px; background: rgb(207, 207, 159); padding: 50px;"
   >
     <h2>
       Welcome to SwiftCart Provisions Express!
