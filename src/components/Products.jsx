@@ -1,10 +1,10 @@
 import Product from "./Product";
-import useUrl from "../utils/useUrl";
+import { useProductsUrl } from "../utils/useUrl";
 import PropTypes from "prop-types";
 const url = "https://fakestoreapi.com/products";
 
 export default function Products({ handleAdding }) {
-  const { json: products, loading, error } = useUrl(url);
+  const { json: products, loading, error } = useProductsUrl(url);
   if (error) return <h1>Sorry couldn&apos;t load products</h1>;
   return (
     <main>

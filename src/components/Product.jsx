@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
+import Spinner from "../assets/Spinner-1s-200px.svg";
+import Fail from "../assets/fail-1.1s-200px.svg";
+import { useImageUrl } from "../utils/useUrl";
 function Product({
   id,
   title,
@@ -12,6 +15,8 @@ function Product({
   cart = false,
 }) {
   const [amount, setAmount] = useState(0);
+  const { loading, error, imgSrc } = useImageUrl(imageUrl);
+
   const product = {
     id,
     title,
@@ -25,7 +30,14 @@ function Product({
   }
   return (
     <div>
-      <img src={imageUrl} alt="" width="200px" />
+      {loading ? (
+        <img src={Spinner} alt="loading" width="200px" />
+      ) : error ? (
+        <img src={Fail} alt="Failed to fetch" width="200px" />
+      ) : (
+        <img src={imgSrc} alt="" />
+      )}
+
       <h2>{title}</h2>
       <h2>Price:{price}</h2>
       <h2>
