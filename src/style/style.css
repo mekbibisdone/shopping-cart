@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+header{
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0;
+  flex-wrap: wrap;
+}
+nav{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main {
+  flex: 1;
+}
+main img{
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+}
+.payButton {
+  max-width: 200px;
+}
+footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex: 0;
+}
+
+footer nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

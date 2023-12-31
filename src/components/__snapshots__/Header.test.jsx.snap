@@ -30,7 +30,9 @@ exports[`Header > matches the snapshot taken 1`] = `
       </div>
     </nav>
   </header>
-  <main>
+  <main
+    style="align-self: center; max-width: 800px;"
+  >
     <h2>
       Welcome to SwiftCart Provisions Express!
     </h2>
@@ -67,29 +69,33 @@ exports[`Header > matches the snapshot taken 1`] = `
       <h2>
         Customer Support
       </h2>
-      <a
-        href="+1-800-123-4567"
-      >
-        1-800-123-4567
-      </a>
-      <a
-        href="mailto:support@swiftcartexpress.com"
-      >
-        support@swiftcartexpress.com
-      </a>
+      <nav>
+        <a
+          href="+1-800-123-4567"
+        >
+          1-800-123-4567
+        </a>
+        <a
+          href="mailto:support@swiftcartexpress.com"
+        >
+          support@swiftcartexpress.com
+        </a>
+      </nav>
       <h2>
         Business enquires
       </h2>
-      <a
-        href="+1-800-765-4321"
-      >
-        1-800-765-4321
-      </a>
-      <a
-        href="mailto:business@swiftcartexpress.com"
-      >
-        business@swiftcartexpress.com
-      </a>
+      <nav>
+        <a
+          href="+1-800-765-4321"
+        >
+          1-800-765-4321
+        </a>
+        <a
+          href="mailto:business@swiftcartexpress.com"
+        >
+          business@swiftcartexpress.com
+        </a>
+      </nav>
       <h2>
         Address
       </h2>

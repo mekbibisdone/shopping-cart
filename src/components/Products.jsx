@@ -7,7 +7,7 @@ export default function Products({ handleAdding }) {
   const { json: products, loading, error } = useProductsUrl(url);
   if (error) return <h1>Sorry couldn&apos;t load products</h1>;
   return (
-    <main>
+    <main style={{ display: "flex", flexWrap:"wrap", justifyContent:"center" ,gap:"40px"}}>
       {loading ? (
         <h1>Loading</h1>
       ) : (

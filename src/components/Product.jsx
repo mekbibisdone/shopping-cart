@@ -29,7 +29,7 @@ function Product({
     handleAdding({ ...product, amount });
   }
   return (
-    <div>
+    <div style={{ display: "grid", maxWidth: "300px", justifyItems: "center" }}>
       {loading ? (
         <img src={Spinner} alt="loading" width="200px" />
       ) : error ? (
