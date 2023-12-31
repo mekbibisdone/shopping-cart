@@ -29,7 +29,7 @@ function Product({
     handleAdding({ ...product, amount });
   }
   return (
-    <div style={{ display: "grid", maxWidth: "300px", justifyItems: "center" }}>
+    <div className="product" style={{ display: "grid", maxWidth: "300px", justifyItems: "center", gap:"10px"}}>
       {loading ? (
         <img src={Spinner} alt="loading" width="200px" />
       ) : error ? (
@@ -57,7 +57,7 @@ function Product({
               id={"amount" + id}
             />
           </label>
-          <button onClick={add}>Add to cart</button>
+          <button className="addButton" onClick={add}>Add to cart</button>
         </>
       ) : (
         <h2>Amount:{selectedAmount}</h2>
