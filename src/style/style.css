@@ -56,6 +56,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  height: 100vh
 }
 a {
   font-size: 1.5rem;
@@ -116,4 +117,11 @@ footer nav {
 }
 address {
   text-align: center;
+}
+
+
+@media (max-width:600px) {
+  footer a{
+    font-size: 1rem;
+  }
 }
